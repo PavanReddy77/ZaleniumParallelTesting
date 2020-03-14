@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Zalenium Tests Suite" parallel="tests" thread-count="4">
+
+	<test name="Zalenium Chrome Tests">
+		<parameter name="Browser" value="Chrome"/>
+		<classes>
+			<class name="com.Zalenium.Tests.LoginPageTest"/>
+		</classes>
+	</test>
+
+	<test name="Zalenium Firefox Tests">
+		<parameter name="Browser" value="Firefox"/>
+		<classes>
+			<class name="com.Zalenium.Tests.LoginPageTest"/>
+		</classes>
+	</test>
+</suite> 

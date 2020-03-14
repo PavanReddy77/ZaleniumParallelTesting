@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Zalenium Tests Suite]" parallel="tests">
+  <parameter name="Browser" value="Firefox"/>
+  <test name="Zalenium Chrome Tests(failed)" parallel="tests">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.Zalenium.Tests.LoginPageTest">
+        <methods>
+          <include name="homePageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="loginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.Zalenium.Tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Zalenium Chrome Tests(failed) -->
+  <test name="Zalenium Firefox Tests(failed)" parallel="tests">
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="com.Zalenium.Tests.LoginPageTest">
+        <methods>
+          <include name="homePageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="loginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.Zalenium.Tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Zalenium Firefox Tests(failed) -->
+</suite> <!-- Failed suite [Zalenium Tests Suite] -->
