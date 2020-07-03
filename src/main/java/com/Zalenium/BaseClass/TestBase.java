@@ -27,7 +27,7 @@ public class TestBase
 		try 
 		{
 			property = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/crm/qa/Configuration/Configuration.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/Zalenium/Configuration/Configuration.properties");
 			property.load(ip);
 		} 
 		catch (FileNotFoundException e)
